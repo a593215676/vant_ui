@@ -1,29 +1,48 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+       <router-view></router-view>
+        <Footer v-if="$route.meta.isShow"></Footer>
     </div>
-    <router-view/>
   </div>
 </template>
+<script>
+    import Footer from './views/Footer'
+    export default {
+        name: "App",
+        components: {
+            Footer
+        },
+        props: {},
+        data() {
+            return {}
+        },
+        methods: {},
+        mounted() {
+            this.$store.dispatch("getCity");
+        },
+        created() {
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+        },
+        filters: {},
+        computed: {
+
+        },
+        watch: {
+
+        },
+        directives: {}
     }
-  }
-}
+</script>
+<style lang="scss">
+    *{
+        box-sizing: border-box;
+    }
+    #nav{
+        width: 100%;
+
+    }
+    #app{
+        width: 100%;
+    }
 </style>

@@ -1,0 +1,80 @@
+2019-05-16 10:18:20,811 ERROR 4308 [-/127.0.0.1/-/2ms POST /v1/search] nodejs.CastError: Cast to string failed for value "{ isTrusted: 'true' }" at path "name" for model "Goods"
+    at new CastError (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\mongoose\lib\error\cast.js:29:11)
+    at SchemaString.cast (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\mongoose\lib\schema\string.js:551:11)
+    at SchemaString.SchemaType.applySetters (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\mongoose\lib\schematype.js:892:12)
+    at SchemaString.SchemaType._castForQuery (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\mongoose\lib\schematype.js:1304:15)
+    at SchemaString.castForQuery (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\mongoose\lib\schema\string.js:607:15)
+    at SchemaString.handleSingle (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\mongoose\lib\schema\string.js:560:15)
+    at SchemaString.castForQuery (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\mongoose\lib\schema\string.js:600:20)
+    at SchemaString.SchemaType.castForQueryWrapper (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\mongoose\lib\schematype.js:1268:17)
+    at cast (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\mongoose\lib\cast.js:288:39)
+    at model.Query.Query.cast (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\mongoose\lib\query.js:4488:12)
+    at model.Query.<anonymous> (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\mongoose\lib\query.js:2151:10)
+    at model.Query._wrappedThunk [as _countDocuments] (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\mongoose\lib\helpers\query\wrapThunk.js:16:8)
+    at C:\Users\Administrator\Desktop\vant_ui\server\node_modules\kareem\index.js:369:33
+    at processTicksAndRejections (internal/process/task_queues.js:82:9)
+message: "Cast to string failed for value \"{ isTrusted: 'true' }\" at path \"name\" for model \"Goods\""
+name: "CastError"
+stringValue: "\"{ isTrusted: 'true' }\""
+kind: "string"
+value: {"isTrusted":"true"}
+path: "name"
+reason: undefined
+model: undefined
+pid: 4308
+hostname: stu46
+
+2019-05-18 09:05:07,100 ERROR 1784 [-/127.0.0.1/-/6ms POST /v1/collection] nodejs.TypeError: Cannot read property 'id' of null
+    at OperatingGoodsController.collection (C:\Users\Administrator\Desktop\vant_ui\server\app\controller\api\operatingGoods.js:16:24)
+    at processTicksAndRejections (internal/process/task_queues.js:89:5)
+    at async C:\Users\Administrator\Desktop\vant_ui\server\app\middleware\isLogin.js:15:13
+    at async C:\Users\Administrator\Desktop\vant_ui\server\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\koa-bodyparser\index.js:86:5)
+    at async C:\Users\Administrator\Desktop\vant_ui\server\node_modules\koa-static-cache\index.js:51:63
+    at async notfound (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 1784
+hostname: stu46
+
+2019-05-18 09:06:55,225 ERROR 1784 [-/127.0.0.1/-/2ms POST /v1/collection] nodejs.TypeError: Cannot read property 'id' of null
+    at OperatingGoodsController.collection (C:\Users\Administrator\Desktop\vant_ui\server\app\controller\api\operatingGoods.js:16:24)
+    at processTicksAndRejections (internal/process/task_queues.js:89:5)
+    at async C:\Users\Administrator\Desktop\vant_ui\server\app\middleware\isLogin.js:15:13
+    at async C:\Users\Administrator\Desktop\vant_ui\server\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\koa-bodyparser\index.js:86:5)
+    at async C:\Users\Administrator\Desktop\vant_ui\server\node_modules\koa-static-cache\index.js:51:63
+    at async notfound (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 1784
+hostname: stu46
+
+2019-05-18 09:06:57,218 ERROR 1784 [-/127.0.0.1/-/2ms POST /v1/collection] nodejs.TypeError: Cannot read property 'id' of null
+    at OperatingGoodsController.collection (C:\Users\Administrator\Desktop\vant_ui\server\app\controller\api\operatingGoods.js:16:24)
+    at processTicksAndRejections (internal/process/task_queues.js:89:5)
+    at async C:\Users\Administrator\Desktop\vant_ui\server\app\middleware\isLogin.js:15:13
+    at async C:\Users\Administrator\Desktop\vant_ui\server\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\koa-bodyparser\index.js:86:5)
+    at async C:\Users\Administrator\Desktop\vant_ui\server\node_modules\koa-static-cache\index.js:51:63
+    at async notfound (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\Users\Administrator\Desktop\vant_ui\server\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 1784
+hostname: stu46
+
